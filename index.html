@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakshi Ravindra Asati | Data Scientist & ML Engineer</title>
+    <title>Sakshi Asati | Data Scientist & ML Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +22,28 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -35,14 +53,14 @@
         <div class="container hero-grid">
             <div class="hero-intro reveal">
                 <p class="hero-greeting">Hello, I am</p>
-                <h1 class="hero-name">Sakshi Ravindra Asati</h1>
+                <h1 class="hero-name">Sakshi Asati</h1>
                 <h2 class="hero-role">Data Scientist & ML Engineer</h2>
                 <p class="hero-summary">
                     I architect reliable AI systems that turn complex data into intelligent experiences. From resilient data pipelines to production-grade models, I help teams move fast without sacrificing rigor.
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">Explore Projects</a>
-                    <a href="resume.pdf?v=2025-10-31" class="btn btn-secondary" target="_blank" rel="noopener">Download Résumé</a>
+                    <a href="resume.pdf?v=2026-02-05" class="btn btn-secondary" target="_blank" rel="noopener">Download Résumé</a>
                 </div>
                 <div class="hero-links">
                     <a href="https://linkedin.com/in/sakshiasati" target="_blank" class="social-link">LinkedIn</a>
@@ -53,14 +71,14 @@
             </div>
             <div class="hero-profile reveal">
                 <div class="profile-card">
-                    <img src="profile_picture.jpg" alt="Sakshi Ravindra Asati portrait" class="profile-photo">
+                    <img src="profile_picture.jpg" alt="Sakshi Asati portrait" class="profile-photo">
                     <div class="profile-details">
                         <span class="profile-label">Currently</span>
                         <p class="profile-text">M.S. Data Science, University of Colorado Boulder</p>
                     </div>
                     <div class="profile-quote">
                         <p>“Innovation happens when curiosity meets disciplined execution.”</p>
-                        <span>- Sakshi Ravindra Asati</span>
+                        <span>- Sakshi Asati</span>
                     </div>
                 </div>
                 <div class="metrics-grid">
@@ -111,9 +129,10 @@
                 <div class="about-column reveal" data-tilt>
                     <h3 class="column-title">Education</h3>
                     <div class="timeline-card">
-                        <span class="timeline-period">2024 – 2026</span>
+                        <span class="timeline-period">Aug 2024 – May 2026 (Expected)</span>
                         <h4 class="timeline-title">M.S. Data Science</h4>
                         <p class="timeline-meta">University of Colorado Boulder, USA</p>
+                        <p class="timeline-meta" style="margin-top: 0.5rem; font-size: 0.9rem;">Teaching Assistant – Data Mining</p>
                     </div>
                     <div class="timeline-card">
                         <span class="timeline-period">2018 – 2022</span>
@@ -159,6 +178,16 @@
             </div>
             <div class="experience-grid">
                 <div class="experience-card reveal" data-tilt>
+                    <span class="experience-period">Jan 2026 – Present</span>
+                    <h3 class="experience-role">Entrepreneurship Fellow</h3>
+                    <h4 class="experience-company">Innovation & Entrepreneurship Initiative – CU Boulder · Boulder, CO</h4>
+                    <ul class="experience-points">
+                        <li>Built an automated Python ETL pipeline to collect and enrich 1,000+ CU Boulder alumni founder records from 5+ public sources using web scraping and API integrations.</li>
+                        <li>Designed normalized SQLite schema and implemented cleaning, enrichment, and deduplication workflows to produce high-quality, CRM-ready datasets.</li>
+                        <li>Generated Salesforce-ready exports and productionized weekly runs with logging, rate limiting, and error handling, replacing manual research with a fully automated process.</li>
+                    </ul>
+                </div>
+                <div class="experience-card reveal" data-tilt>
                     <span class="experience-period">Jun 2024 – Aug 2024</span>
                     <h3 class="experience-role">Data & ML Intern</h3>
                     <h4 class="experience-company">The Recess App · Denver, CO</h4>
@@ -173,10 +202,10 @@
                     <h3 class="experience-role">Programmer Analyst</h3>
                     <h4 class="experience-company">Cognizant Technology Solutions · Pune, India</h4>
                     <ul class="experience-points">
-                        <li>Monitored and worked on large-scale ETL pipelines ingesting high-volume, multi-format datasets into Hadoop, applying GDPR-compliant encryption standards to ensure secure and compliant data processing.</li>
-                        <li>Enhanced reliability and scalability of UAC-based workflows by implementing Apache Airflow automation with retry mechanisms, SLA monitoring, and fault-tolerant scheduling, reducing manual intervention by 50%.</li>
-                        <li>Analyzed Spark job failures through log inspection and exception tracing, working with cross-functional teams to resolve issues and improve stability of business-critical pipelines.</li>
-                        <li>Built Python utilities and SQL validation checks to monitor data quality and pipeline health, reducing incident response time by 15% and improving downstream data availability.</li>
+                        <li>Monitored and managed ETL flows ingesting multi-format datasets into Hadoop with GDPR-compliant encryption so sensitive financial data stayed secure.</li>
+                        <li>Automated UAC-based data pipelines with Apache Airflow, adding retry logic and SLA notifications that cut manual oversight by 50% while improving delivery reliability.</li>
+                        <li>Resolved production Spark failures by tracing stack traces, rerunning impacted jobs, and partnering with platform teams to keep business-critical workloads online.</li>
+                        <li>Built SQL/Python validation suites and Jenkins + Bitbucket pipelines that reduced incident response time by 15% and tightened deployment quality.</li>
                     </ul>
                 </div>
                 <div class="experience-card reveal" data-tilt>
@@ -219,7 +248,6 @@
                         <span class="chip">R</span>
                         <span class="chip">SQL (PostgreSQL, MySQL)</span>
                         <span class="chip">FastAPI</span>
-                        <span class="chip">REST APIs</span>
                         <span class="chip">Streamlit</span>
                     </div>
                 </div>
@@ -227,16 +255,16 @@
                     <h3 class="column-title">Machine Learning & AI</h3>
                     <div class="chip-group">
                         <span class="chip">Scikit-Learn</span>
-                        <span class="chip">PyTorch</span>
                         <span class="chip">TensorFlow</span>
                         <span class="chip">Keras</span>
+                        <span class="chip">PyTorch</span>
                         <span class="chip">XGBoost</span>
-                        <span class="chip">Model Evaluation</span>
-                        <span class="chip">Statistical Modeling</span>
+                        <span class="chip">YOLOv8</span>
                         <span class="chip">LangChain</span>
                         <span class="chip">GPT-4</span>
                         <span class="chip">FAISS</span>
-                        <span class="chip">NLP Pipelines</span>
+                        <span class="chip">Model Evaluation</span>
+                        <span class="chip">Statistical Analysis</span>
                     </div>
                 </div>
                 <div class="skill-column reveal" data-tilt>
@@ -244,14 +272,13 @@
                     <div class="chip-group">
                         <span class="chip">AWS</span>
                         <span class="chip">GCP</span>
-                        <span class="chip">Distributed Systems</span>
-                        <span class="chip">Airflow</span>
-                        <span class="chip">PySpark</span>
-                        <span class="chip">Hadoop</span>
-                        <span class="chip">ETL Pipelines</span>
-                        <span class="chip">Redis</span>
-                        <span class="chip">Docker</span>
                         <span class="chip">Kubernetes</span>
+                        <span class="chip">Airflow</span>
+                        <span class="chip">Hadoop</span>
+                        <span class="chip">PySpark</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Jenkins</span>
+                        <span class="chip">Redis</span>
                         <span class="chip">MongoDB</span>
                     </div>
                 </div>
@@ -285,10 +312,10 @@
                     <header class="project-header">
                         <span class="project-type">Healthcare AI</span>
                         <h3 class="project-title">Secure Medical Notes AI</h3>
-                        <p class="project-date">Aug 2025 – Dec 2025 · Graduate Studio Project</p>
+                        <p class="project-date">Aug 2025 – Nov 2025 · Graduate Studio Project</p>
                     </header>
                     <p class="project-description">
-                        Built a medical documentation platform that summarizes unstructured clinical notes and supports patient risk assessment using GPT-4, with backend services designed for scalability and latency-aware API performance. Implemented a secure, cloud-native system on GCP using JWT authentication, RBAC, audit logging, Redis-backed async processing, and robust data protection practices.
+                        Built a LangChain + GPT-4 documentation assistant with FAISS retrieval so clinicians review notes faster, while Streamlit dashboards, FastAPI services, Celery, and Redis coordinate authenticated workflows backed by PostgreSQL inside Docker.
                     </p>
                     <ul class="project-highlights">
                         <li>Clinical reviewers cut note synthesis time by <strong>35%</strong> with contextual retrieval prompts.</li>
@@ -296,30 +323,33 @@
                     </ul>
                     <div class="project-meta">
                         <span class="meta-item">FastAPI</span>
+                        <span class="meta-item">LangChain</span>
                         <span class="meta-item">GPT-4</span>
+                        <span class="meta-item">Streamlit</span>
                         <span class="meta-item">PostgreSQL</span>
                         <span class="meta-item">Redis</span>
                         <span class="meta-item">Docker</span>
-                        <span class="meta-item">GCP</span>
                     </div>
                 </article>
                 <article class="project-card reveal" data-tilt>
                     <header class="project-header">
                         <span class="project-type">Computer Vision</span>
-                        <h3 class="project-title">VisionStock – Retail Inventory Detection</h3>
-                        <p class="project-date">Aug 2025 – Dec 2025 · Deep Learning Project</p>
+                        <h3 class="project-title">VisionStock: Retail Inventory Detection</h3>
+                        <p class="project-date">Retail Analytics Project</p>
                     </header>
                     <p class="project-description">
-                        Developed a deep learning system for automated retail shelf detection using fine-tuned YOLOv8 models on custom image data. Applied transfer learning, exposed REST APIs for inference, and created dashboards to compare baseline vs fine-tuned models.
+                        Fine-tuned YOLOv8 on retail shelf images to detect and classify 34 product categories for automated inventory tracking. Built a FastAPI inference service and Streamlit dashboard to process images and return predictions in under 2 seconds, enabling near real-time stock checks during store operations.
                     </p>
                     <ul class="project-highlights">
-                        <li>Fine-tuned YOLOv8 models on custom retail image datasets for accurate shelf inventory detection.</li>
-                        <li>Deployed REST APIs for real-time inference and built comparison dashboards for model performance evaluation.</li>
+                        <li>Automated inventory tracking across <strong>34 product categories</strong> with computer vision.</li>
+                        <li>FastAPI inference service delivers predictions in <strong>under 2 seconds</strong> for real-time stock checks.</li>
                     </ul>
                     <div class="project-meta">
                         <span class="meta-item">YOLOv8</span>
-                        <span class="meta-item">Streamlit</span>
+                        <span class="meta-item">FastAPI</span>
                         <span class="meta-item">PostgreSQL</span>
+                        <span class="meta-item">Streamlit</span>
+                        <span class="meta-item">Docker</span>
                         <span class="meta-item">GCP</span>
                     </div>
                 </article>
@@ -327,34 +357,34 @@
                     <header class="project-header">
                         <span class="project-type">GenAI Workflow</span>
                         <h3 class="project-title">SupportSync: Intelligent CRM Ops</h3>
-                        <p class="project-date">Jan 2025 – Apr 2025 · Product Internship</p>
+                        <p class="project-date">Feb 2025 – Apr 2025 · Product Internship</p>
                     </header>
                     <p class="project-description">
-                        Designed a real-time CRM system to centralize support requests and streamline customer–agent communication. Integrated an AI chatbot to automate FAQs and password resets, reducing agent workload by 30%.
+                        Delivered a full-stack CRM platform (MongoDB, Node.js, React) that centralizes support tickets and integrates an AI chatbot for FAQs and password resets, cutting agent workload by 30% and accelerating resolution times.
                     </p>
                     <ul class="project-highlights">
                         <li>Unified multi-channel tickets into a single dashboard with live SLA tracking.</li>
-                        <li>AI chatbot automated FAQs and password resets, reducing agent workload by <strong>30%</strong>.</li>
+                        <li>GenAI assistant deflected <strong>30%</strong> of routine requests and trimmed first-response time by <strong>18%</strong>.</li>
                     </ul>
                     <div class="project-meta">
                         <span class="meta-item">MongoDB</span>
-                        <span class="meta-item">Express</span>
-                        <span class="meta-item">React</span>
                         <span class="meta-item">Node.js</span>
+                        <span class="meta-item">React</span>
+                        <span class="meta-item">GCP</span>
                     </div>
                 </article>
                 <article class="project-card reveal" data-tilt>
                     <header class="project-header">
                         <span class="project-type">Forecasting</span>
                         <h3 class="project-title">NexChain: Supply Signal Optimization</h3>
-                        <p class="project-date">Jan 2025 – Apr 2025 · Retail Analytics Challenge</p>
+                        <p class="project-date">Jan 2025 – May 2025 · Retail Analytics Challenge</p>
                     </header>
                     <p class="project-description">
-                        Built machine learning models using XGBoost to forecast irregular product demand across historical sales data. Used clustering to segment products by demand behavior, reducing overstock risk by 20% and improving procurement planning.
+                        Benchmarked ML ensembles to tame irregular demand, reaching 97% forecasting accuracy and clustering SKUs by behavior so planners cut overstock risk by 20% and tighten procurement decisions.
                     </p>
                     <ul class="project-highlights">
-                        <li>XGBoost models achieved high accuracy in forecasting irregular product demand patterns.</li>
-                        <li>Product clustering by demand behavior reduced overstock risk by <strong>20%</strong> and improved procurement planning.</li>
+                        <li>Feature-store pipelines in Python keep demand signals fresh for nightly re-trains.</li>
+                        <li>Merchandising dashboards surfaced <strong>20%</strong> inventory risk reduction for top 50 SKUs.</li>
                     </ul>
                     <div class="project-meta">
                         <span class="meta-item">Python</span>
@@ -475,7 +505,7 @@
                 </div>
                 <div class="contact-card reveal" data-tilt>
                     <span class="contact-label">Résumé</span>
-                    <a href="resume.pdf?v=2025-10-31" target="_blank" class="contact-value">Open PDF</a>
+                    <a href="resume.pdf?v=2026-02-05" target="_blank" class="contact-value">Open PDF</a>
                 </div>
             </div>
         </div>
@@ -484,7 +514,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Sakshi Ravindra Asati. All rights reserved.</p>
+            <p>&copy; 2024 Sakshi Asati. All rights reserved.</p>
             <p class="footer-subtext">Crafted with curiosity, empathy, and rigorous data storytelling.</p>
         </div>
     </footer>
