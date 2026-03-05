@@ -684,7 +684,7 @@ def render_hero_section():
     # Profile Picture
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        profile_pic_path = Path("profile_picture.jpg")
+        profile_pic_path = Path("profile_picture.jpeg")
         if profile_pic_path.exists():
             st.markdown("""
             <div class="profile-frame">
